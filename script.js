@@ -35,6 +35,7 @@ document.getElementById("calorieForm").addEventListener("submit", function(event
 
     const heightInMeters = height / 100;
     const bmi = weight / (heightInMeters * heightInMeters);
+    const bmiReference = "BMI Reference: Underweight (<18.5), Normal weight (18.5–24.9), Overweight (25–29.9), Obesity (BMI of 30 or greater)";
 
     const carbsGrams = (tdee * 0.50) / 4;
     const proteinGrams = (tdee * 0.30) / 4;
@@ -50,7 +51,7 @@ document.getElementById("calorieForm").addEventListener("submit", function(event
     let resultText = `Hi ${clientName}\nPhone: ${clientPhone}\n\n`;
     resultText += `Your daily calorie intake: ${tdee.toFixed(2)} kcal\n`;
     resultText += `Ideal body weight: ${idealWeight.toFixed(2)} kg\n`;
-    resultText += `Your BMI: ${bmi.toFixed(2)}\n`;
+    resultText += `Your BMI: ${bmi.toFixed(2)}\n${bmiReference}\n\n`;
     resultText += `Macronutrients:\nCarbohydrates: ${carbsGrams.toFixed(2)} g/day\n`;
     resultText += `Protein: ${proteinGrams.toFixed(2)} g/day\nFat: ${fatGrams.toFixed(2)} g/day\n\n`;
     resultText += `Meal Guidelines:\nBreakfast: ${breakfastCalories.toFixed(2)} kcal\n`;
