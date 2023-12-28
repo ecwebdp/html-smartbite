@@ -91,3 +91,6 @@ function printPDF() {
 
 document.getElementById('downloadBtn').addEventListener('click', downloadPDF);
 document.getElementById('printBtn').addEventListener('click', printPDF);
+document.getElementById('homeBtn').addEventListener('click', function() {
+    window.location.href = 'https://all-smart-bite.com/smartbitecal';
+});
