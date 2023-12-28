@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100vh;
 }
 
 .container {
@@ -56,21 +56,22 @@ button:hover {
     text-align: center;
 }
 
-.output-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.output-row > p {
-    margin: 5px 0;
-    flex: 1;
-    text-align: center;
-}
-
 .bmi-reference {
     font-style: italic;
     text-align: center;
     margin-top: 10px;
+}
+
+#homeBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#homeBtn:hover {
+    background-color: #45a049;
 }
